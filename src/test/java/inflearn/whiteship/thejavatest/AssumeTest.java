@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 @Slf4j
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-class AssumeTest {
+class AssumeTest implements BaseTest {
 
     @Test
     @DisplayName("assumeTrue()")
@@ -57,10 +57,5 @@ class AssumeTest {
         });
 
         log.info("assumingThat()");
-    }
-
-    private void assertStudyIsNotNull() {
-        Study study = new Study(10);
-        assertThat(study).isNotNull();
     }
 }

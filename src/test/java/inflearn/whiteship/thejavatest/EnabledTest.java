@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 @Slf4j
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-class EnabledTest {
+class EnabledTest implements BaseTest {
 
     @Test
     @EnabledOnOs({OS.MAC})
@@ -77,10 +77,5 @@ class EnabledTest {
     void test_DisabledIfSystemProperty() {
         assertStudyIsNotNull();
         log.info("test_DisabledIfSystemProperty()");
-    }
-
-    private void assertStudyIsNotNull() {
-        Study study = new Study(10);
-        assertThat(study).isNotNull();
     }
 }
