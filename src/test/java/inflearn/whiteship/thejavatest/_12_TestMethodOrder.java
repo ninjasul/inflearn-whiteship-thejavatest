@@ -11,7 +11,7 @@ class _12_TestMethodOrder {
     private int value = 1;
 
     @Test
-    @DisplayName("method1")
+    @DisplayName("method2")
     @Order(2)
     void method2() {
         log.info("value: {}", value++);
