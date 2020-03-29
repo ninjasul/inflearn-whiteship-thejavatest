@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-class StudyTest {
+class _01_StudyTest {
 
     @Test
     @DisplayName("스터디 만들기")

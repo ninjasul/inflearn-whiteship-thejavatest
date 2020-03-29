@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 @Slf4j
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-class EnabledTest implements BaseTest {
+class _05_EnabledTest implements BaseTest {
 
     @Test
     @EnabledOnOs({OS.MAC})

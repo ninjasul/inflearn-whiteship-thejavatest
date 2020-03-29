@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Slf4j
-public class ParameterTest {
+public class _09_ParameterizedTest {
 
     @DisplayName("파라미터 입력 테스트")
     @ParameterizedTest(name = "{index} {displayName} message={0}")

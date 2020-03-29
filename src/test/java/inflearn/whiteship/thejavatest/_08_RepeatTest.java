@@ -8,7 +8,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 @Slf4j
-public class RepeatTest implements BaseTest {
+public class _08_RepeatTest implements BaseTest {
 
     @DisplayName("반복테스트")
     @RepeatedTest(5)

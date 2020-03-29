@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
 @TestInstance(Lifecycle.PER_CLASS)
-class TestInstanceTest {
+class _10_TestInstanceTest {
 
     int value = 1;
 

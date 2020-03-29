@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 @Slf4j
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-class AssumeTest implements BaseTest {
+class _05_AssumeTest implements BaseTest {
 
     @Test
     @DisplayName("assumeTrue()")
