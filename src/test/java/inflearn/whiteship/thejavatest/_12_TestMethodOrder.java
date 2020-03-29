@@ -4,32 +4,35 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-import java.time.Duration;
-
-import static inflearn.whiteship.thejavatest.Study.ERROR_MESSAGE_LIMIT_SHOULD_BE_GREATER_THAN_0;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
-
 @Slf4j
 @TestInstance(Lifecycle.PER_CLASS)
-class _10_TestInstanceTest {
-
-    int value = 1;
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+class _12_TestMethodOrder {
+    private int value = 1;
 
     @Test
     @DisplayName("method1")
-    void method1() {
-        log.info("value: {}", value++);
-        log.info("method1");
-    }
-
-    @Test
-    @DisplayName("method2")
+    @Order(2)
     void method2() {
         log.info("value: {}", value++);
         log.info("method2");
     }
 
+    @Test
+    @DisplayName("method3")
+    @Order(3)
+    void method3() {
+        log.info("value: {}", value++);
+        log.info("method3");
+    }
+
+    @Test
+    @DisplayName("method1")
+    @Order(1)
+    void method1() {
+        log.info("value: {}", value++);
+        log.info("method1");
+    }
 
     // 테스트 인스턴스가 Lifecycle.PER_CLASS 인 경우 BeforeAll, AfterAll 메소드가 static일 필요가 없음.
     @BeforeAll
