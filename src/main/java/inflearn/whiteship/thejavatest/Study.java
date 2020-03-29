@@ -10,12 +10,31 @@ public class Study {
 
     private StudyStatus status = StudyStatus.DRAFT;
     private int limit;
+    private String name;
 
     public Study(int limit) {
+        assertLimitIsGreaterThanZero(limit);
+        this.limit = limit;
+    }
+
+    public Study(int limit, String name) {
+        assertLimitIsGreaterThanZero(limit);
+        this.limit = limit;
+        this.name = name;
+    }
+
+    private void assertLimitIsGreaterThanZero(int limit) {
         if (limit <= 0) {
             throw new IllegalArgumentException(ERROR_MESSAGE_LIMIT_SHOULD_BE_GREATER_THAN_0);
         }
+    }
 
-        this.limit = limit;
+    @Override
+    public String toString() {
+        return "Study{" +
+                "status=" + status +
+                ", limit=" + limit +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
