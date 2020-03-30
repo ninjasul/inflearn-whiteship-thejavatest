@@ -19,7 +19,7 @@ import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class StubbingTest {
+public class _19_StubbingTest {
 
     @Mock
     private MemberService memberService;

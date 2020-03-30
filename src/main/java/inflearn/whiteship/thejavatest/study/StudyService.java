@@ -32,7 +32,8 @@ public class StudyService {
         }
 
         Study newStudy = repository.save(study);
-        //memberService.notify(newStudy);
+        memberService.notify(newStudy);
+        memberService.notify(member.get());
         return newStudy;
     }
 
