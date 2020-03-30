@@ -1,5 +1,6 @@
 package inflearn.whiteship.thejavatest.domain;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -23,6 +24,7 @@ public class Study {
         this.limit = limit;
     }
 
+    @Builder
     public Study(int limit, String name) {
         assertLimitIsGreaterThanZero(limit);
         this.limit = limit;

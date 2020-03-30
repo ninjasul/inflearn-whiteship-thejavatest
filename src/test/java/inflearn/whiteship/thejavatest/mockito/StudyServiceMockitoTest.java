@@ -7,22 +7,20 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(MockitoExtension.class)
 public class StudyServiceMockitoTest {
     @Mock
-    private MemberService annotatedMemerService;
+    private MemberService annotatedMemberService;
 
     @Mock
     private StudyRepository annotatedRepository;
 
     @Test
     void annotatedMockitoTest() {
-        StudyService studyService = new StudyService(annotatedMemerService, annotatedRepository);
+        StudyService studyService = new StudyService(annotatedMemberService, annotatedRepository);
         assertThat(studyService).isNotNull();
     }
 
