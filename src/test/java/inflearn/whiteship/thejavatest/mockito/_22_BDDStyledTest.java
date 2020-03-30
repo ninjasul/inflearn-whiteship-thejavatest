@@ -29,8 +29,8 @@ public class _22_BDDStyledTest {
     private StudyRepository studyRepository;
 
     @Test
-    @DisplayName("verify() 테스트")
-    void test_verify() {
+    @DisplayName("BDD 스타일 API 테스트")
+    void test_BDDStyledAPI() {
         // Given
         StudyService studyService = new StudyService(memberService, studyRepository);
         assertThat(studyService).isNotNull();
