@@ -33,25 +33,4 @@ class _12_TestMethodOrder {
         log.info("value: {}", value++);
         log.info("method1");
     }
-
-    // 테스트 인스턴스가 Lifecycle.PER_CLASS 인 경우 BeforeAll, AfterAll 메소드가 static일 필요가 없음.
-    @BeforeAll
-    void beforeAll() {
-        log.info("beforeAll");
-    }
-
-    @AfterAll
-    void afterAll() {
-        log.info("afterAll");
-    }
-
-    @BeforeEach
-    void setUp() {
-        log.info("beforeEach");
-    }
-
-    @AfterEach
-    void tearDown() {
-        log.info("afterEach");
-    }
 }
