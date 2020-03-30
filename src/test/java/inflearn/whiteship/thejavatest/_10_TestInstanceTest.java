@@ -33,12 +33,12 @@ class _10_TestInstanceTest {
 
     // 테스트 인스턴스가 Lifecycle.PER_CLASS 인 경우 BeforeAll, AfterAll 메소드가 static일 필요가 없음.
     @BeforeAll
-    void beforeAll() {
+    static void beforeAll() {
         log.info("beforeAll");
     }
 
     @AfterAll
-    void afterAll() {
+    static void afterAll() {
         log.info("afterAll");
     }
 
