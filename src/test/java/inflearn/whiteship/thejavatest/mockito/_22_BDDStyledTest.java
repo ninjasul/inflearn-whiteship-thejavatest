@@ -20,7 +20,7 @@ import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-public class _21_BDDStyledTest {
+public class _22_BDDStyledTest {
 
     @Mock
     private MemberService memberService;
