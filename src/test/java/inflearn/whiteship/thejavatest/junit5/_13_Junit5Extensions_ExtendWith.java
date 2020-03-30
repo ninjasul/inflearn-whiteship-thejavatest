@@ -1,8 +1,7 @@
-package inflearn.whiteship.thejavatest;
+package inflearn.whiteship.thejavatest.junit5;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.TestInstance.Lifecycle;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @Slf4j

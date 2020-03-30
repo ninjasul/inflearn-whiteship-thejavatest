@@ -1,14 +1,10 @@
-package inflearn.whiteship.thejavatest;
+package inflearn.whiteship.thejavatest.junit5;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-import java.time.Duration;
-
-import static inflearn.whiteship.thejavatest.Study.ERROR_MESSAGE_LIMIT_SHOULD_BE_GREATER_THAN_0;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
 @TestInstance(Lifecycle.PER_CLASS)

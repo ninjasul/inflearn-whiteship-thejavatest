@@ -1,4 +1,6 @@
-package inflearn.whiteship.thejavatest;
+package inflearn.whiteship.thejavatest.junit5;
+
+import inflearn.whiteship.thejavatest.domain.Study;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

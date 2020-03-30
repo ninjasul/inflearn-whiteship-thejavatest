@@ -1,4 +1,4 @@
-package inflearn.whiteship.thejavatest;
+package inflearn.whiteship.thejavatest.junit5;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-@Tag("B")
+@Tag("A")
 @Test
-public @interface TestB {
+public @interface TestA {
 }
